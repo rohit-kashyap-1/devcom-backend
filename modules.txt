@@ -1,0 +1,23 @@
+1. products
+2. customers
+3. orders
+4. transactions
+5. admins: store manager, super admin
+6. categories
+7. wishes
+8. reviews: customers on product
+9. Notifications
+
+
+https://www.freecodecamp.org/news/how-to-hash-passwords-with-bcrypt-in-nodejs/
+
+app.get('/hash', (req, res) => {
+  const password = "rohit@123"
+  const saltRounds = 10;
+
+  bcrypt.hash(password, saltRounds, (err, hash) => {
+    if (err) throw err;
+    console.log('Hashed password:', hash);
+  });
+
+})
